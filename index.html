@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>CGL Studio · Mobile tycoon, strategy and arcade games</title>
-<meta name="description" content="CGL Studio is an independent mobile game studio from Türkiye. Builder Tycoon is out now on Google Play and Organization: Shadow Rule on the App Store; Tap Business Tycoon, BRICK69 and EXOVOID are on the way.">
+<meta name="description" content="CGL Studio is an independent mobile game studio from Türkiye. Builder Tycoon is out now on Google Play and the App Store, and Organization: Shadow Rule on the App Store; Tap Business Tycoon, BRICK69 and EXOVOID are on the way.">
 <link rel="canonical" href="https://cglstudio.com/">
 <meta name="theme-color" content="#07090F">
 <meta name="color-scheme" content="dark">
@@ -13,7 +13,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="CGL Studio">
 <meta property="og:title" content="CGL Studio · Small studio. Big empires.">
-<meta property="og:description" content="Mobile games from Türkiye. Builder Tycoon is out now on Google Play, Organization: Shadow Rule on the App Store.">
+<meta property="og:description" content="Mobile games from Türkiye. Builder Tycoon is out now on Google Play and the App Store, Organization: Shadow Rule on the App Store.">
 <meta property="og:url" content="https://cglstudio.com/">
 <meta property="og:image" content="https://cglstudio.com/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -276,7 +276,7 @@
         <h1>Small studio.<br><span class="grad">Big empires.</span></h1>
         <p class="lead">We make tycoon and strategy games where you start with almost nothing and build something huge, one deal at a time, and quick arcade games you play with one finger.</p>
         <div class="cta">
-          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.cglstudio.buildertycoon">
+          <a class="btn btn-primary" id="hero-play" href="https://play.google.com/store/apps/details?id=com.cglstudio.buildertycoon">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 3.6v16.8c0 .8.9 1.3 1.6.9l14.1-8.4c.7-.4.7-1.4 0-1.8L6.6 2.7C5.9 2.3 5 2.8 5 3.6z"/></svg>
             Play Builder Tycoon
           </a>
@@ -316,7 +316,7 @@
           <div class="game-head">
             <img class="icon" src="img/builder-tycoon/icon.webp" width="76" height="76" alt="">
             <div>
-              <div class="badges"><span class="badge badge-live">Out now</span><span class="badge">Android</span><span class="badge">iOS soon</span></div>
+              <div class="badges"><span class="badge badge-live">Out now</span><span class="badge">Android</span><span class="badge">iOS</span></div>
               <h3>Builder Tycoon</h3>
               <p class="tagline">Build solid. Grow your name.</p>
             </div>
@@ -333,7 +333,10 @@
               <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 3.6v16.8c0 .8.9 1.3 1.6.9l14.1-8.4c.7-.4.7-1.4 0-1.8L6.6 2.7C5.9 2.3 5 2.8 5 3.6z"/></svg>
               Get it on Google Play
             </a>
-            <span class="btn btn-off">App Store · coming soon</span>
+            <a class="btn btn-store" href="https://apps.apple.com/app/id6822795875">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8s2 .8 3.4.8c1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9 0 0-2.7-1-2.7-4.1zM13.9 5c.7-.9 1.2-2 1-3.2-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.1 1.2.1 2.3-.6 3.1-1.5z"/></svg>
+              Download on the App Store
+            </a>
             <a class="text-link" href="https://sites.google.com/view/buildertycoon-gizlilik">Privacy policy</a>
           </div>
         </div>
@@ -549,6 +552,10 @@
       viewer.showModal();
     }));
     viewer.addEventListener('click', () => viewer.close());
+  }
+  // iPhone and iPad visitors get the App Store link in the hero; everyone else keeps Google Play.
+  if (/iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)) {
+    document.getElementById('hero-play').href = 'https://apps.apple.com/app/id6822795875';
   }
 </script>
 <!-- Cloudflare Web Analytics: page views and visits, no cookies --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "84e2c4269c80475485efa5d4a06d234a"}'></script>
