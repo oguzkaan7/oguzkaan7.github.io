@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>CGL Studio · Mobile tycoon, strategy and arcade games</title>
-<meta name="description" content="CGL Studio is an independent mobile game studio from Türkiye. Builder Tycoon and BRICK69 are out now on Google Play and the App Store, Organization: Shadow Rule and EXOVOID on the App Store and Rivalry Inc. on Google Play.">
+<meta name="description" content="CGL Studio is an independent mobile game studio from Türkiye. Builder Tycoon and BRICK69 are out now on Google Play and the App Store, Organization: Shadow Rule and EXOVOID on the App Store and Rivalry Inc. on Google Play; Tribe to Tanks is on the way.">
 <link rel="canonical" href="https://cglstudio.com/">
 <meta name="theme-color" content="#07090F">
 <meta name="color-scheme" content="dark">
@@ -13,7 +13,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="CGL Studio">
 <meta property="og:title" content="CGL Studio · Small studio. Big empires.">
-<meta property="og:description" content="Mobile games from Türkiye. Builder Tycoon and BRICK69 are out now on Google Play and the App Store, Organization: Shadow Rule and EXOVOID on the App Store, Rivalry Inc. on Google Play.">
+<meta property="og:description" content="Mobile games from Türkiye. Builder Tycoon and BRICK69 are out now on Google Play and the App Store, Organization: Shadow Rule and EXOVOID on the App Store, Rivalry Inc. on Google Play. Tribe to Tanks is on the way.">
 <meta property="og:url" content="https://cglstudio.com/">
 <meta property="og:image" content="https://cglstudio.com/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -169,6 +169,11 @@
   .game--exo::after { content: ""; position: absolute; inset: 0; z-index: -1; background: radial-gradient(520px 360px at 0% 100%, rgba(40,90,190,.16), transparent 70%); }
   .game--exo .tagline { color: var(--ice); }
   .game--exo .feats li::before { background: var(--ice); }
+  /* Tribe to Tanks */
+  .game--ttt { --glow: rgba(255,176,46,.15); }
+  .game--ttt::after { content: ""; position: absolute; inset: 0; z-index: -1; background: radial-gradient(520px 360px at 100% 100%, rgba(232,100,60,.12), transparent 70%); }
+  .game--ttt .tagline { color: #FFB25C; }
+  .game--ttt .feats li::before { background: #FF7A45; }
 
   /* Studio */
   .studio { padding: clamp(40px, 6vw, 72px) 0; }
@@ -495,6 +500,40 @@
           </div>
         </div>
       </article>
+
+      <article class="game game--ttt" id="tribe-to-tanks">
+        <div class="media">
+          <img class="feature" src="img/tribe-to-tanks/feature.webp" width="1024" height="500" loading="lazy" alt="Tribe to Tanks: Evolve your army through the ages. Red and blue biplanes clash between two hangars">
+          <div class="shots">
+            <a href="img/tribe-to-tanks/1-savas.webp"><img src="img/tribe-to-tanks/1-savas.webp" width="540" height="960" loading="lazy" alt="Battle in the air timeline: biplanes fly toward the enemy hangar"></a>
+            <a href="img/tribe-to-tanks/2-yukseltmeler.webp"><img src="img/tribe-to-tanks/2-yukseltmeler.webp" width="540" height="960" loading="lazy" alt="Upgrades screen of the Biplane Era with three units, food production and base health"></a>
+            <a href="img/tribe-to-tanks/3-evrim.webp"><img src="img/tribe-to-tanks/3-evrim.webp" width="540" height="960" loading="lazy" alt="Evolution screen: from the Biplane Era to the Jet Era"></a>
+            <a href="img/tribe-to-tanks/4-ana-ekran.webp"><img src="img/tribe-to-tanks/4-ana-ekran.webp" width="540" height="960" loading="lazy" alt="Home screen with the battle button between two hangars"></a>
+          </div>
+        </div>
+        <div class="body">
+          <div class="game-head">
+            <img class="icon" src="img/tribe-to-tanks/icon.webp" width="76" height="76" alt="">
+            <div>
+              <div class="badges"><span class="badge badge-dev">In development</span><span class="badge">Lane battle</span></div>
+              <h3>Tribe to Tanks</h3>
+              <p class="tagline">From stone-age tribes to tanks.</p>
+            </div>
+          </div>
+          <p>Send out units, manage your meat supply and smash the enemy base. Every enemy you defeat drops gold for upgrades. When your army is ready, evolve into the next era and trade clubs for biplanes, jets and tanks.</p>
+          <ul class="feats">
+            <li><b>41 eras, 126 units</b>Seven hand-made timelines on land, at sea and in the air.</li>
+            <li><b>Build your power</b>31 cards, 33 artifacts in 11 sets, 19 relics, 11 runes and 4 battle skills.</li>
+            <li><b>Two dungeons</b>Zombie Attack, and Legends with 10 historical chapters.</li>
+            <li><b>Leagues and events</b>Climb six league tiers every week and join weekend events.</li>
+            <li><b>Paper-craft art</b>A hand-drawn look, one-handed portrait play, and it plays offline.</li>
+          </ul>
+          <div class="actions">
+            <span class="note">In development. Coming to iOS and Android, in Turkish for now.</span>
+            <a class="text-link" href="tribe-to-tanks/gizlilik.html">Privacy policy</a>
+          </div>
+        </div>
+      </article>
     </div>
   </section>
 
@@ -548,6 +587,7 @@
         <a href="tap-business-tycoon/gizlilik.html">Rivalry Inc. privacy</a>
         <a href="brick69/gizlilik.html">BRICK69 privacy</a>
         <a href="exovoid/gizlilik.html">EXOVOID privacy</a>
+        <a href="tribe-to-tanks/gizlilik.html">Tribe to Tanks privacy</a>
       </nav>
     </div>
     <p class="legal">Google Play and the Google Play logo are trademarks of Google LLC. App Store is a service mark of Apple Inc.</p>
